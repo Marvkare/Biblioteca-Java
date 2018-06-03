@@ -1,0 +1,6 @@
+Nombre=dir
+Autor=sdf
+Editorial=fsd
+Ano=sadf
+Genero=fs
+Prestado=fs
