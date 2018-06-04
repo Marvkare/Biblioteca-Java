@@ -1,0 +1,6 @@
+Nombre=les
+Autor=fa
+Editorial=dfs
+Genero=fsd
+Ano=fsd
+Prestado=false

@@ -1,6 +1,0 @@
-Nombre=resssssss
-Autor=wer
-Editorial=fsdgdf
-Ano=sdf
-Genero=gfd
-Prestado=gfd

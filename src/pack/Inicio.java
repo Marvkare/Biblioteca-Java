@@ -31,12 +31,12 @@ public class Inicio extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         panelPrincipal = new javax.swing.JPanel();
         jButton6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(800, 600));
 
         jButton1.setText("Añadir");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -52,14 +52,12 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("Prestamos");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        jButton5.setText("Libros");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                jButton5ActionPerformed(evt);
             }
         });
-
-        jButton5.setText("Libros");
 
         panelPrincipal.setForeground(new java.awt.Color(48, 65, 206));
 
@@ -67,7 +65,7 @@ public class Inicio extends javax.swing.JFrame {
         panelPrincipal.setLayout(panelPrincipalLayout);
         panelPrincipalLayout.setHorizontalGroup(
             panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 434, Short.MAX_VALUE)
+            .addGap(0, 654, Short.MAX_VALUE)
         );
         panelPrincipalLayout.setVerticalGroup(
             panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -86,16 +84,14 @@ public class Inicio extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addComponent(panelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(panelPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(58, 58, 58))
+                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(45, 45, 45))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -109,12 +105,9 @@ public class Inicio extends javax.swing.JFrame {
                         .addComponent(jButton6)
                         .addGap(31, 31, 31)
                         .addComponent(jButton2)
-                        .addGap(26, 26, 26)
-                        .addComponent(jButton3)
-                        .addGap(40, 40, 40)
+                        .addGap(89, 89, 89)
                         .addComponent(jButton5)
-                        .addGap(0, 95, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addContainerGap(337, Short.MAX_VALUE))))
         );
 
         pack();
@@ -124,7 +117,7 @@ public class Inicio extends javax.swing.JFrame {
 
        
        PanelAñadir p1 = new PanelAñadir();
-       p1.setSize(400, 600);//tamaño de panel
+       p1.setSize(654, 654);//tamaño de panel
        p1.setLocation(5,5 );//posicion del panel
        panelPrincipal.removeAll();
        panelPrincipal.add(p1, BorderLayout.CENTER);
@@ -139,7 +132,7 @@ public class Inicio extends javax.swing.JFrame {
        portal.respuestas();
        
        PanelEliminar p2 = new PanelEliminar();
-       p2.setSize(400, 600);//tamaño de panel
+       p2.setSize(654, 654);//tamaño de panel
        p2.setLocation(5,5 );//posicion del panel
        panelPrincipal.removeAll();
        panelPrincipal.add(p2, BorderLayout.CENTER);
@@ -147,25 +140,25 @@ public class Inicio extends javax.swing.JFrame {
        panelPrincipal.repaint();
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-       PanelPrestamos p1 = new PanelPrestamos();
-       p1.setSize(400, 600);//tamaño de panel
-       p1.setLocation(5,5 );//posicion del panel
-       panelPrincipal.removeAll();
-       panelPrincipal.add(p1, BorderLayout.CENTER);
-       panelPrincipal.revalidate();
-       panelPrincipal.repaint();
-    }//GEN-LAST:event_jButton3ActionPerformed
-
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
          Editar p1 = new Editar();
-       p1.setSize(400, 600);//tamaño de panel
+       p1.setSize(654, 654);//tamaño de panel
        p1.setLocation(5,5 );//posicion del panel
        panelPrincipal.removeAll();
        panelPrincipal.add(p1, BorderLayout.CENTER);
        panelPrincipal.revalidate();
        panelPrincipal.repaint();
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        PanelLibros p1 = new PanelLibros();
+       p1.setSize(654, 654);//tamaño de panel
+       p1.setLocation(5,5 );//posicion del panel
+       panelPrincipal.removeAll();
+       panelPrincipal.add(p1, BorderLayout.CENTER);
+       panelPrincipal.revalidate();
+       panelPrincipal.repaint();
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -205,7 +198,6 @@ public class Inicio extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JPanel panelPrincipal;

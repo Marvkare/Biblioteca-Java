@@ -1,0 +1,6 @@
+Nombre=ros
+Autor=fsa
+Editorial=fas
+Genero=fas
+Ano=fasfd
+Prestado=false

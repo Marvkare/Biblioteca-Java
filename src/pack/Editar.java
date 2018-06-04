@@ -5,10 +5,8 @@
  */
 package pack;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileWriter;
-import java.io.PrintWriter;
+import java.io.*;
+
 import java.util.Formatter;
 import java.util.Properties;
 import javax.swing.JOptionPane;
