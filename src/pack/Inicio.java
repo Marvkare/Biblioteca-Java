@@ -6,6 +6,12 @@
 package pack;
 
 import java.awt.BorderLayout;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.net.URL;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 /**
  *
@@ -13,6 +19,7 @@ import java.awt.BorderLayout;
  */
 public class Inicio extends javax.swing.JFrame {
     
+   
     
     
     public Inicio() {
@@ -36,7 +43,6 @@ public class Inicio extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(800, 600));
 
         jButton1.setText("Añadir");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -114,10 +120,10 @@ public class Inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
+       
        
        PanelAñadir p1 = new PanelAñadir();
-       p1.setSize(654, 654);//tamaño de panel
+       p1.setSize(600, 600);//tamaño de panel
        p1.setLocation(5,5 );//posicion del panel
        panelPrincipal.removeAll();
        panelPrincipal.add(p1, BorderLayout.CENTER);
@@ -132,7 +138,7 @@ public class Inicio extends javax.swing.JFrame {
        portal.respuestas();
        
        PanelEliminar p2 = new PanelEliminar();
-       p2.setSize(654, 654);//tamaño de panel
+       p2.setSize(600, 600);//tamaño de panel
        p2.setLocation(5,5 );//posicion del panel
        panelPrincipal.removeAll();
        panelPrincipal.add(p2, BorderLayout.CENTER);
@@ -142,7 +148,7 @@ public class Inicio extends javax.swing.JFrame {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
          Editar p1 = new Editar();
-       p1.setSize(654, 654);//tamaño de panel
+       p1.setSize(600, 600);//tamaño de panel
        p1.setLocation(5,5 );//posicion del panel
        panelPrincipal.removeAll();
        panelPrincipal.add(p1, BorderLayout.CENTER);
@@ -152,7 +158,7 @@ public class Inicio extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         PanelLibros p1 = new PanelLibros();
-       p1.setSize(654, 654);//tamaño de panel
+       p1.setSize(600, 600);//tamaño de panel
        p1.setLocation(5,5 );//posicion del panel
        panelPrincipal.removeAll();
        panelPrincipal.add(p1, BorderLayout.CENTER);
